@@ -1,0 +1,19 @@
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\Prime Movie Project.exe.config
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\Prime Movie Project.exe
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\Prime Movie Project.pdb
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.csprojResolveAssemblyReference.cache
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.Properties.Resources.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.csproj.GenerateResource.Cache
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.csproj.CoreCompileInputs.cache
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.exe
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.pdb
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmMain.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmMoviedetail.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.csproj.ResolveComReference.cache
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmTrailer.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmAdd.resources

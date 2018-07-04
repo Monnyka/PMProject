@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09C38B80-0D65-496B-B7FB-314EAA70909E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Prime_Movie_Project</RootNamespace>
+    <AssemblyName>Prime Movie Project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Prime Movie Project\WorldSrc.com_Bunifu_.NET_UI_Framework\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdd.Designer.cs">
+      <DependentUpon>frmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoviedetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoviedetail.Designer.cs">
+      <DependentUpon>frmMoviedetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrailer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrailer.Designer.cs">
+      <DependentUpon>frmTrailer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdd.resx">
+      <DependentUpon>frmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoviedetail.resx">
+      <DependentUpon>frmMoviedetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrailer.resx">
+      <DependentUpon>frmTrailer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnPicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotificationPaneltop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showdowbutton view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male User_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Megaphone_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google Alerts_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Vertical_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SBViewmovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\justin-timberlake-announces-the-release-of-his-new-album-man-of-the-woods.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keep in touch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QSLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surge_monitor_800x600.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comp_finale.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Moviebtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movielistbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewReportbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mission-impossible.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moreDetailbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moreDetailbtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moreDetailbtn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the_nun__2018____poster_by_netoribeiro89-dbkrvcq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mission-impossible2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blurfilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blurfilter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blurfilter21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blurfilter22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelmovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloadbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDownload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDownload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTrailer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_32px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
