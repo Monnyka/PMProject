@@ -35,10 +35,33 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\Desktop\Prime Movie Project\WorldSrc.com_Bunifu_.NET_UI_Framework\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,8 +71,11 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classGetmovie.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +87,18 @@
     </Compile>
     <Compile Include="frmAdd.Designer.cs">
       <DependentUpon>frmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntry.Designer.cs">
+      <DependentUpon>frmEntry.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMoviedetail.cs">
       <SubType>Form</SubType>
@@ -74,6 +112,7 @@
     <Compile Include="frmTrailer.Designer.cs">
       <DependentUpon>frmTrailer.cs</DependentUpon>
     </Compile>
+    <Compile Include="movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -81,6 +120,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdd.resx">
       <DependentUpon>frmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntry.resx">
+      <DependentUpon>frmEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMoviedetail.resx">
       <DependentUpon>frmMoviedetail.cs</DependentUpon>
@@ -90,18 +135,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <None Include="Content\mdl-v1.1.2\bower.json" />
+    <None Include="Content\mdl-v1.1.2\LICENSE" />
+    <None Include="Content\mdl-v1.1.2\material.min.css.map" />
+    <None Include="Content\mdl-v1.1.2\material.min.js.map" />
+    <None Include="Content\mdl-v1.1.2\package.json" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -110,123 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pnPicture.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\npa.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\not1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\NotificationPaneltop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\showdowbutton view.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu_back.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Person_96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Male User_96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Megaphone_96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Google Alerts_96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Menu Vertical_96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SBViewmovie.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\justin-timberlake-announces-the-release-of-his-new-album-man-of-the-woods.jpg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\keep in touch.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\QSLine.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\surge_monitor_800x600.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\comp_finale.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Add Moviebtn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\movielistbtn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ViewReportbtn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mission-impossible.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\moreDetailbtn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\moreDetailbtn1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\moreDetailbtn2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\searchbox.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\the_nun__2018____poster_by_netoribeiro89-dbkrvcq.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mission-impossible2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Blurfilter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blurfilter2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blurfilter21.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blurfilter22.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\panelmovie.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\downloadbtn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnDownload.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnDownload1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnTrailer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Back_96px.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxShockwaveFlashObjects">
@@ -248,10 +182,13 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\brnBack.png" />
+    <Content Include="Content\mdl-v1.1.2\material.css" />
+    <Content Include="Content\mdl-v1.1.2\material.js" />
+    <Content Include="Content\mdl-v1.1.2\material.min.css" />
+    <Content Include="Content\mdl-v1.1.2\material.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cancel_32px.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

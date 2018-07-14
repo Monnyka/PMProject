@@ -17,3 +17,16 @@ C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\AxI
 C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime Movie Project.csproj.ResolveComReference.cache
 C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmTrailer.resources
 C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmAdd.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\MaterialSkin.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\MetroFramework.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmEntry.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.pdb
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.xml
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmDashboard.resources

@@ -30,5 +30,12 @@ namespace Prime_Movie_Project
         {
             lbDate.Text=DateTime.Now.ToString("dd, MMMM, yyyy");
         }
+
+        private void pbHome1_Click(object sender, EventArgs e)
+        {
+            frmMoviedetail moviedetail = new frmMoviedetail();
+            moviedetail.Show();
+            this.Hide();
+        }
     }
 }
