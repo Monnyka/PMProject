@@ -16,5 +16,20 @@ namespace Prime_Movie_Project
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pbEdit_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

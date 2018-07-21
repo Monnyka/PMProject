@@ -30,3 +30,4 @@ C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\Liv
 C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmDashboard.resources
+C:\Users\Nyka\source\repos\Prime Movie Project\Prime Movie Project\obj\Debug\Prime_Movie_Project.frmLogin.resources

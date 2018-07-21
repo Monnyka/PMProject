@@ -100,6 +100,12 @@
     <Compile Include="frmEntry.Designer.cs">
       <DependentUpon>frmEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMoviedetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEntry.resx">
       <DependentUpon>frmEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMoviedetail.resx">
       <DependentUpon>frmMoviedetail.cs</DependentUpon>
@@ -186,9 +195,14 @@
     <Content Include="Content\mdl-v1.1.2\material.js" />
     <Content Include="Content\mdl-v1.1.2\material.min.css" />
     <Content Include="Content\mdl-v1.1.2\material.min.js" />
+    <None Include="Resources\Workflow_96px.png" />
+    <None Include="Resources\Network_96px.png" />
+    <None Include="Resources\Thumbs Up_96px.png" />
+    <None Include="Resources\007_96px.png" />
+    <None Include="Resources\Multiply_96px.png" />
+    <None Include="Resources\Edit_96px.png" />
+    <None Include="Resources\Mission Impossible Poster.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

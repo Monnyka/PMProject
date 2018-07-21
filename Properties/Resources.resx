@@ -118,4 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Thumbs Up_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thumbs Up_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Network_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Network_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mission Impossible Poster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mission Impossible Poster.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="007_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\007_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Multiply_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Multiply_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Workflow_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Workflow_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
