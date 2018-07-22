@@ -31,14 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.label18 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pieChart2 = new LiveCharts.WinForms.PieChart();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuSeparator8 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator7 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator6 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator5 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,18 +62,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label18 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator5 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator6 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator7 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator8 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -95,6 +95,48 @@
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 10;
             // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Name = "label18";
+            // 
+            // bunifuCustomLabel3
+            // 
+            resources.ApplyResources(this.bunifuCustomLabel3, "bunifuCustomLabel3");
+            this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            // 
+            // bunifuCustomLabel2
+            // 
+            resources.ApplyResources(this.bunifuCustomLabel2, "bunifuCustomLabel2");
+            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Name = "label17";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Prime_Movie_Project.Properties.Resources.Network_96px;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Prime_Movie_Project.Properties.Resources.Thumbs_Up_96px;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // pieChart2
             // 
             this.pieChart2.BackColor = System.Drawing.Color.Transparent;
@@ -122,20 +164,6 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label14.Name = "label14";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Prime_Movie_Project.Properties.Resources.Network_96px;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Prime_Movie_Project.Properties.Resources.Thumbs_Up_96px;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
             // 
             // bunifuGradientPanel1
             // 
@@ -175,6 +203,56 @@
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
+            // 
+            // bunifuSeparator8
+            // 
+            this.bunifuSeparator8.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator8.LineThickness = 1;
+            resources.ApplyResources(this.bunifuSeparator8, "bunifuSeparator8");
+            this.bunifuSeparator8.Name = "bunifuSeparator8";
+            this.bunifuSeparator8.Transparency = 255;
+            this.bunifuSeparator8.Vertical = true;
+            // 
+            // bunifuSeparator7
+            // 
+            this.bunifuSeparator7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator7.LineThickness = 1;
+            resources.ApplyResources(this.bunifuSeparator7, "bunifuSeparator7");
+            this.bunifuSeparator7.Name = "bunifuSeparator7";
+            this.bunifuSeparator7.Transparency = 255;
+            this.bunifuSeparator7.Vertical = true;
+            // 
+            // bunifuSeparator6
+            // 
+            this.bunifuSeparator6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator6.LineThickness = 1;
+            resources.ApplyResources(this.bunifuSeparator6, "bunifuSeparator6");
+            this.bunifuSeparator6.Name = "bunifuSeparator6";
+            this.bunifuSeparator6.Transparency = 255;
+            this.bunifuSeparator6.Vertical = true;
+            // 
+            // bunifuSeparator5
+            // 
+            this.bunifuSeparator5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator5.LineThickness = 1;
+            resources.ApplyResources(this.bunifuSeparator5, "bunifuSeparator5");
+            this.bunifuSeparator5.Name = "bunifuSeparator5";
+            this.bunifuSeparator5.Transparency = 255;
+            this.bunifuSeparator5.Vertical = true;
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator4.LineThickness = 1;
+            resources.ApplyResources(this.bunifuSeparator4, "bunifuSeparator4");
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Transparency = 255;
+            this.bunifuSeparator4.Vertical = true;
             // 
             // label15
             // 
@@ -268,38 +346,10 @@
             this.bunifuCustomLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Name = "label17";
-            // 
-            // bunifuCustomLabel2
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel2, "bunifuCustomLabel2");
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCustomLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            // 
-            // bunifuCustomLabel3
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel3, "bunifuCustomLabel3");
-            this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCustomLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Name = "label18";
-            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.DimGray;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
             resources.ApplyResources(this.bunifuSeparator1, "bunifuSeparator1");
             this.bunifuSeparator1.Name = "bunifuSeparator1";
@@ -325,56 +375,6 @@
             this.bunifuSeparator3.Name = "bunifuSeparator3";
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
-            // 
-            // bunifuSeparator4
-            // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.DimGray;
-            this.bunifuSeparator4.LineThickness = 1;
-            resources.ApplyResources(this.bunifuSeparator4, "bunifuSeparator4");
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Transparency = 255;
-            this.bunifuSeparator4.Vertical = true;
-            // 
-            // bunifuSeparator5
-            // 
-            this.bunifuSeparator5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator5.LineThickness = 1;
-            resources.ApplyResources(this.bunifuSeparator5, "bunifuSeparator5");
-            this.bunifuSeparator5.Name = "bunifuSeparator5";
-            this.bunifuSeparator5.Transparency = 255;
-            this.bunifuSeparator5.Vertical = true;
-            // 
-            // bunifuSeparator6
-            // 
-            this.bunifuSeparator6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator6.LineThickness = 1;
-            resources.ApplyResources(this.bunifuSeparator6, "bunifuSeparator6");
-            this.bunifuSeparator6.Name = "bunifuSeparator6";
-            this.bunifuSeparator6.Transparency = 255;
-            this.bunifuSeparator6.Vertical = true;
-            // 
-            // bunifuSeparator7
-            // 
-            this.bunifuSeparator7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator7.LineThickness = 1;
-            resources.ApplyResources(this.bunifuSeparator7, "bunifuSeparator7");
-            this.bunifuSeparator7.Name = "bunifuSeparator7";
-            this.bunifuSeparator7.Transparency = 255;
-            this.bunifuSeparator7.Vertical = true;
-            // 
-            // bunifuSeparator8
-            // 
-            this.bunifuSeparator8.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator8.LineThickness = 1;
-            resources.ApplyResources(this.bunifuSeparator8, "bunifuSeparator8");
-            this.bunifuSeparator8.Name = "bunifuSeparator8";
-            this.bunifuSeparator8.Transparency = 255;
-            this.bunifuSeparator8.Vertical = true;
             // 
             // frmDashboard
             // 

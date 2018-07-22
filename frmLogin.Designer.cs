@@ -62,6 +62,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(223, 33);
             this.txtName.TabIndex = 0;
+            this.txtName.Text = "1";
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtPassword
@@ -81,6 +82,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(223, 33);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.Text = "1";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pictureBox1

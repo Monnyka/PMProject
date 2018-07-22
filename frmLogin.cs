@@ -40,7 +40,7 @@ namespace Prime_Movie_Project
                 string name = txtName.Text;
 
                 //ss.txtUname.Text = txtUname.Text;
-                frmMain frmMain = new frmMain();
+                frmMain frmMain = new frmMain(txtName.Text);
                 frmMain.Show();
                 this.Hide();
 

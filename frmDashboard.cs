@@ -98,7 +98,7 @@ namespace Prime_Movie_Project
 
         private void frmDashboard_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

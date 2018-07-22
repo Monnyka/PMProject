@@ -14,9 +14,10 @@ namespace Prime_Movie_Project
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        public frmMain(String uname)
         {
             InitializeComponent();
+            lbUname.Text = uname;
         }
         //Form Loading Event:
         private void frmMain_Load(object sender, EventArgs e)
@@ -26,109 +27,143 @@ namespace Prime_Movie_Project
             SqlConnection cnn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Database\\MLDBTest.mdf;Integrated Security=True;Connect Timeout=30");
 
             cnn.Open();
-            SqlCommand cmd = new SqlCommand();
-            SqlCommand cmd1 = new SqlCommand();
-            SqlCommand cmdcount = new SqlCommand();
-            string sqlquery = "";
-            string sqlquery1 = "";
-            string sqlcount = "";
-            //get number of all record
-            sqlcount= "SELECT COUNT(ID) FROM tbMovie;";
-            cmdcount = new SqlCommand(sqlcount, cnn);
-            int a = 20;
-
-
-
-            sqlquery = "SELECT photo FROM tbMovie WHERE id='a';";
-            cmd = new SqlCommand(sqlquery, cnn);
-
-            
-
-
-            SqlDataReader dr1 = cmd.ExecuteReader();        
-            dr1.Read();
-            if (dr1.HasRows)
+            string sqlquery = "select * from tbMovie Order by id DESC";
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand(sqlquery, cnn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            if (lbNumber.Text == "3")
             {
-                byte[] images1 = ((byte[])dr1[0]);
-                if (images1 == null)
+                textBox1.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
+                textBox2.Text = dataGridView1.Rows[1].Cells[0].Value.ToString();
+                textBox3.Text = dataGridView1.Rows[2].Cells[0].Value.ToString();
+            }
+            cnn.Close();
+
+            //Image One
+            cnn.Open();
+            sqlquery = "select Photo from tbMovie where id='" + textBox1.Text + "'";
+            cmd = new SqlCommand(sqlquery, cnn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            if (dr.HasRows)
+            {
+                byte[] images = ((byte[])dr[0]);
+                if (images == null)
                 {
                     pbHome1.Image = null;
                 }
                 else
                 {
-                    MemoryStream ms1 = new MemoryStream(images1);
-                    pbHome1.Image = Image.FromStream(ms1);
+                    MemoryStream ms = new MemoryStream(images);
+                    pbHome1.Image = Image.FromStream(ms);
+                    textBox1.Text = dataGridView1.Rows[0].Cells[1].Value.ToString();
+                }
+                dr.Close();
+            }
+            cnn.Close();
+
+            //image two
+            cnn.Open();
+            sqlquery = "select Photo from tbMovie where id='" + textBox2.Text + "'";
+            cmd = new SqlCommand(sqlquery, cnn);
+            SqlDataReader dr1 = cmd.ExecuteReader();
+            dr1.Read();
+            if (dr1.HasRows)
+            {
+                byte[] images = ((byte[])dr1[0]);
+                if (images == null)
+                {
+                    pbHome1.Image = null;
+                }
+                else
+                {
+                    MemoryStream ms1 = new MemoryStream(images);
+                    pbHome2.Image = Image.FromStream(ms1);
+                    textBox2.Text = dataGridView1.Rows[1].Cells[1].Value.ToString();
                 }
             }
-            dr1.Close();
+            cnn.Close();
 
-            sqlquery1 = "select Photo from tbMovie where id=46";
-            cmd1 = new SqlCommand(sqlquery1, cnn);
-            SqlDataReader dr2 = cmd1.ExecuteReader();
+            //Image 3
 
+            cnn.Open();
+            sqlquery = "select Photo from tbMovie where id='" + textBox3.Text + "'";
+            cmd = new SqlCommand(sqlquery, cnn);
+            SqlDataReader dr2 = cmd.ExecuteReader();
             dr2.Read();
             if (dr2.HasRows)
             {
-                byte[] images2 = ((byte[])dr2[0]);
-                if (images2 == null)
+                byte[] images = ((byte[])dr2[0]);
+                if (images == null)
                 {
-                    pbHome2.Image = null;
+                    pbHome1.Image = null;
                 }
                 else
                 {
-                    MemoryStream ms2 = new MemoryStream(images2);
-                    pbHome2.Image = Image.FromStream(ms2);
-                }
-            }
-
-            dr2.Close();
-            string sqlquery2 = "";
-            sqlquery2 = "select Photo from tbMovie where id=33";
-            SqlCommand cmd2 = new SqlCommand(sqlquery2, cnn);
-            SqlDataReader dr3 = cmd2.ExecuteReader();
-
-            dr3.Read();
-            if (dr3.HasRows)
-            {
-                byte[] images3 = ((byte[])dr3[0]);
-                if (images3 == null)
-                {
-                    pbHome3.Image = null;
-                }
-                else
-                {
-                    MemoryStream ms3 = new MemoryStream(images3);
-                    pbHome3.Image = Image.FromStream(ms3);
+                    MemoryStream ms2 = new MemoryStream(images);
+                    pbHome3.Image = Image.FromStream(ms2);
+                    textBox3.Text = dataGridView1.Rows[3].Cells[1].Value.ToString();
                 }
             }
             cnn.Close();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            ////Profile Image
+            //cnn.Open();
+            //sqlquery = "select Photo from tbLogin where Name='" + lbUname.Text + "'";
+            //cmd = new SqlCommand(sqlquery, cnn);
+            //SqlDataReader dr3 = cmd.ExecuteReader();
+            //dr2.Read();
+            //if (dr3.HasRows)
+            //{
+            //    byte[] images = ((byte[])dr3[0]);
+            //    if (images == null)
+            //    {
+            //        pbHome1.Image = null;
+            //    }
+            //    else
+            //    {
+            //        MemoryStream ms3 = new MemoryStream(images);
+            //        pbHome3.Image = Image.FromStream(ms3);
+            //    }
+            //}
+            //cnn.Close();
 
 
         }
+
 
         private void pbHome1_Click(object sender, EventArgs e)
         {
             frmMoviedetail moviedetail = new frmMoviedetail();
             moviedetail.Show();
             this.Hide();
+        }
+
+        private void lbDashboard_Click(object sender, EventArgs e)
+        {
+            frmDashboard fDashboard = new frmDashboard();
+            fDashboard.Show();
+            this.Hide();
+        }
+
+        private void lbEntry_Click(object sender, EventArgs e)
+        {
+            frmEntry fEntry = new frmEntry();
+            fEntry.Show();
+        }
+
+        private void lbList_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            string message = "Are you sure you want to exit?";
+            frmPopup fPopup = new frmPopup(message);
+            fPopup.Show();
         }
     }
 }
