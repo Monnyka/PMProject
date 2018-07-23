@@ -16,7 +16,7 @@ namespace Prime_Movie_Project
     {
         public frmEntry()
         {
-            InitializeComponent();  
+            InitializeComponent();
         }
         string message = "";
         string imglocation = "";
@@ -24,8 +24,52 @@ namespace Prime_Movie_Project
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (btnCancel.Text == "Cancel") { this.Close(); }
+            if (btnCancel.Text == "Edit")
+            {
+
+            }
+            if (btnCancel.Text == "Search")
+            {
+                cnn.Open();
+                string sqlquery = "select Title,Year,Genre,Quality,Rating,Country,Synopsis,Director,Cast,D720,D1080,Photo from tbMovie where id='" + txtMID.Text + "'";
+                SqlCommand cmd = new SqlCommand(sqlquery, cnn);
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                if (dr.HasRows)
+                {
+                    txtTitle.Text = dr[0].ToString();
+                    cbYear.Text = dr[1].ToString();
+                    cbGenre.Text = dr[2].ToString();
+                    cbQuality.Text = dr[3].ToString();
+                    cbRating.Text = dr[4].ToString();
+                    cbCountry.Text = dr[5].ToString();
+                    txtSynopsis.Text = dr[6].ToString();
+                    cbDirector.Text = dr[7].ToString();
+                    cbCast.Text = dr[8].ToString();
+                    txtD720.Text = dr[9].ToString();
+                    txtD1080.Text = dr[10].ToString();
+                    byte[] images = ((byte[])dr[11]);
+                    if (images == null)
+                    {
+                        pbMovie.Image = null;
+                    }
+                    else
+                    {
+                        MemoryStream ms = new MemoryStream(images);
+                        pbMovie.Image = Image.FromStream(ms);
+                        btnSave.Enabled = true;
+                        cnn.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No record found!");
+                }
+                cnn.Close();
+            }
         }
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -34,7 +78,7 @@ namespace Prime_Movie_Project
 
         private void pbEdit_Paint(object sender, PaintEventArgs e)
         {
-
+            txtMID.Visible = true;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -79,6 +123,10 @@ namespace Prime_Movie_Project
                 frmPopup fPopup = new frmPopup(message);
                 fPopup.Show();
                 Start:;
+            }
+            if (btnSave.Text == "Update")
+            {
+
             }
         }
 

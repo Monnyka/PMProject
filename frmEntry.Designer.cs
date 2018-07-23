@@ -62,9 +62,10 @@
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnExit = new System.Windows.Forms.PictureBox();
-            this.pbEdit = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtMID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.pbEdit = new Bunifu.Framework.UI.BunifuCards();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -396,7 +397,7 @@
             // 
             // checkSeries
             // 
-            this.checkSeries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.checkSeries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.checkSeries.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.checkSeries.Checked = false;
             this.checkSeries.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -408,7 +409,7 @@
             // 
             // checkPopular
             // 
-            this.checkPopular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.checkPopular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.checkPopular.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.checkPopular.Checked = false;
             this.checkPopular.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -440,6 +441,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Depth = 0;
             this.btnSave.Location = new System.Drawing.Point(938, 563);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
@@ -453,6 +455,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Depth = 0;
             this.btnCancel.Location = new System.Drawing.Point(755, 563);
             this.btnCancel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -460,7 +463,7 @@
             this.btnCancel.Primary = true;
             this.btnCancel.Size = new System.Drawing.Size(167, 42);
             this.btnCancel.TabIndex = 77;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Search";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -570,7 +573,6 @@
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel2.Controls.Add(this.btnExit);
-            this.bunifuGradientPanel2.Controls.Add(this.pbEdit);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomLabel1);
             this.bunifuGradientPanel2.Controls.Add(this.label1);
             this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -597,23 +599,6 @@
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pbEdit
-            // 
-            this.pbEdit.BackColor = System.Drawing.Color.Transparent;
-            this.pbEdit.BackgroundImage = global::Prime_Movie_Project.Properties.Resources.Edit_96px;
-            this.pbEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbEdit.BorderRadius = 5;
-            this.pbEdit.BottomSahddow = true;
-            this.pbEdit.color = System.Drawing.Color.Transparent;
-            this.pbEdit.LeftSahddow = false;
-            this.pbEdit.Location = new System.Drawing.Point(1038, 40);
-            this.pbEdit.Name = "pbEdit";
-            this.pbEdit.RightSahddow = true;
-            this.pbEdit.ShadowDepth = 20;
-            this.pbEdit.Size = new System.Drawing.Size(35, 35);
-            this.pbEdit.TabIndex = 45;
-            this.pbEdit.Paint += new System.Windows.Forms.PaintEventHandler(this.pbEdit_Paint);
-            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
@@ -639,13 +624,51 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Entry";
             // 
+            // txtMID
+            // 
+            this.txtMID.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtMID.BorderColorFocused = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtMID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMID.BorderColorMouseHover = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtMID.BorderThickness = 1;
+            this.txtMID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtMID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMID.isPassword = false;
+            this.txtMID.Location = new System.Drawing.Point(598, 563);
+            this.txtMID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMID.Name = "txtMID";
+            this.txtMID.Size = new System.Drawing.Size(150, 42);
+            this.txtMID.TabIndex = 47;
+            this.txtMID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMID.Visible = false;
+            // 
+            // pbEdit
+            // 
+            this.pbEdit.BackColor = System.Drawing.Color.Transparent;
+            this.pbEdit.BackgroundImage = global::Prime_Movie_Project.Properties.Resources.Edit_96px;
+            this.pbEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbEdit.BorderRadius = 5;
+            this.pbEdit.BottomSahddow = true;
+            this.pbEdit.color = System.Drawing.Color.Transparent;
+            this.pbEdit.LeftSahddow = false;
+            this.pbEdit.Location = new System.Drawing.Point(195, 546);
+            this.pbEdit.Name = "pbEdit";
+            this.pbEdit.RightSahddow = true;
+            this.pbEdit.ShadowDepth = 20;
+            this.pbEdit.Size = new System.Drawing.Size(35, 35);
+            this.pbEdit.TabIndex = 45;
+            this.pbEdit.Paint += new System.Windows.Forms.PaintEventHandler(this.pbEdit_Paint);
+            // 
             // frmEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1150, 617);
+            this.Controls.Add(this.txtMID);
             this.Controls.Add(this.txtTitle);
+            this.Controls.Add(this.pbEdit);
             this.Controls.Add(this.cbCountry);
             this.Controls.Add(this.bunifuSeparator9);
             this.Controls.Add(this.cbQuality);
@@ -728,5 +751,6 @@
         private System.Windows.Forms.ComboBox cbCountry;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator9;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTitle;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtMID;
     }
 }
