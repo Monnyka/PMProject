@@ -32,7 +32,7 @@ namespace Prime_Movie_Project
             if (btnCancel.Text == "Search")
             {
                 cnn.Open();
-                string sqlquery = "select Title,Year,Genre,Quality,Rating,Country,Synopsis,Director,Cast,D720,D1080,Photo from tbMovie where id='" + txtMID.Text + "'";
+                string sqlquery = "select Title,Year,Genre,Quality,Rating,Country,Language,Runtime,Synopsis,Director,Cast,D720,D1080,Photo from tbMovie where id='" + txtMID.Text + "'";
                 SqlCommand cmd = new SqlCommand(sqlquery, cnn);
                 SqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
@@ -44,12 +44,14 @@ namespace Prime_Movie_Project
                     cbQuality.Text = dr[3].ToString();
                     cbRating.Text = dr[4].ToString();
                     cbCountry.Text = dr[5].ToString();
-                    txtSynopsis.Text = dr[6].ToString();
-                    cbDirector.Text = dr[7].ToString();
-                    cbCast.Text = dr[8].ToString();
-                    txtD720.Text = dr[9].ToString();
-                    txtD1080.Text = dr[10].ToString();
-                    byte[] images = ((byte[])dr[11]);
+                    cbLanguage.Text = dr[6].ToString();
+                    txtRuntime.Text = dr[7].ToString();
+                    txtSynopsis.Text = dr[8].ToString();
+                    cbDirector.Text = dr[9].ToString();
+                    cbCast.Text = dr[10].ToString();
+                    txtD720.Text = dr[11].ToString();
+                    txtD1080.Text = dr[12].ToString();
+                    byte[] images = ((byte[])dr[13]);
                     if (images == null)
                     {
                         pbMovie.Image = null;
@@ -99,10 +101,10 @@ namespace Prime_Movie_Project
                 BinaryReader brs = new BinaryReader(streem);
                 images = brs.ReadBytes((int)streem.Length);
 
-                string query = "insert into tbMovie (Title,Year,Genre,Quality,Rating,Country,Synopsis,Director,Cast,D720,D1080,Photo) Values ('" + txtTitle.Text + "','" + cbYear.Text + "','" + cbGenre.Text + "','" + cbQuality.Text + "','" + cbRating.Text + "','" + cbCountry.Text + "','" + txtSynopsis.Text + "','" + cbDirector.Text + "','" + cbCast.Text + "','" + txtD720.Text + "','" + txtD1080.Text + "',@images)";
+                string query = "insert into tbMovie (Title,Year,Genre,Quality,Rating,Country,Language,Runtime,Synopsis,Director,Cast,D720,D1080,Photo) Values ('" + txtTitle.Text + "','" + cbYear.Text + "','" + cbGenre.Text + "','" + cbQuality.Text + "','" + cbRating.Text + "','" + cbCountry.Text + "','"+cbLanguage+"','"+txtRuntime+"','" + txtSynopsis.Text + "','" + cbDirector.Text + "','" + cbCast.Text + "','" + txtD720.Text + "','" + txtD1080.Text + "',@images)";
                 SqlCommand cmd = new SqlCommand(query, cnn);
                 cmd.Parameters.Add(new SqlParameter("@images", images));
-                int n=cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 cnn.Close();
 
                 txtTitle.Text = "";
@@ -140,6 +142,11 @@ namespace Prime_Movie_Project
                 imglocation = fd.FileName.ToString();
                 pbMovie.ImageLocation = imglocation;
             }
+        }
+
+        private void frmEntry_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

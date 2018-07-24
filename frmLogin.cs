@@ -19,7 +19,8 @@ namespace Prime_Movie_Project
             
             
         }
-
+        int x1 = 335;
+        int x2 = 0;
         private void lbRegister_Click(object sender, EventArgs e)
         {
         }
@@ -51,6 +52,46 @@ namespace Prime_Movie_Project
             }
             cnn.Close();
 
+        }
+
+        private void lbCreateone_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            if (pbPoster.Location.X >= 0)
+            { 
+                this.pbPoster.Location = new Point(x1, 1);
+                x1 -= 25;
+               // this.Refresh();
+            }
+            else
+            {
+                timer1.Stop();
+                x1 += 335;
+            }
+        }
+
+        private void lbSignin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            timer2.Start();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (pbPoster.Location.X < 335)
+            {
+                this.pbPoster.Location = new Point(x2, 1);
+                x2 += 25;
+               // this.Refresh();
+            }
+            else
+            {
+                timer2.Stop();
+                x2 -= 355;
+            }
         }
     }
 }

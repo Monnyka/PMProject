@@ -16,7 +16,7 @@ namespace Prime_Movie_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEntry());
+            Application.Run(new frmLogin());
         }
     }
 }

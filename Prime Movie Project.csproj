@@ -204,6 +204,8 @@
     <Content Include="Content\mdl-v1.1.2\material.js" />
     <Content Include="Content\mdl-v1.1.2\material.min.css" />
     <Content Include="Content\mdl-v1.1.2\material.min.js" />
+    <None Include="Resources\rivers-forests-valley-montenegro-river-green-mountains-fantastic-landscape-desktop-backgrounds.jpg" />
+    <None Include="Resources\photo_2018-07-24_15-59-16.jpg" />
     <None Include="Resources\Workflow_96px.png" />
     <None Include="Resources\Network_96px.png" />
     <None Include="Resources\Thumbs Up_96px.png" />

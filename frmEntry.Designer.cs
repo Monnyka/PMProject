@@ -65,7 +65,6 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMID = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.pbEdit = new Bunifu.Framework.UI.BunifuCards();
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).BeginInit();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -443,7 +442,7 @@
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Depth = 0;
-            this.btnSave.Location = new System.Drawing.Point(938, 563);
+            this.btnSave.Location = new System.Drawing.Point(386, 575);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
@@ -457,7 +456,7 @@
             // 
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Depth = 0;
-            this.btnCancel.Location = new System.Drawing.Point(755, 563);
+            this.btnCancel.Location = new System.Drawing.Point(906, 560);
             this.btnCancel.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Primary = true;
@@ -635,30 +634,12 @@
             this.txtMID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtMID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMID.isPassword = false;
-            this.txtMID.Location = new System.Drawing.Point(598, 563);
+            this.txtMID.Location = new System.Drawing.Point(758, 559);
             this.txtMID.Margin = new System.Windows.Forms.Padding(4);
             this.txtMID.Name = "txtMID";
             this.txtMID.Size = new System.Drawing.Size(150, 42);
             this.txtMID.TabIndex = 47;
             this.txtMID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtMID.Visible = false;
-            // 
-            // pbEdit
-            // 
-            this.pbEdit.BackColor = System.Drawing.Color.Transparent;
-            this.pbEdit.BackgroundImage = global::Prime_Movie_Project.Properties.Resources.Edit_96px;
-            this.pbEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbEdit.BorderRadius = 5;
-            this.pbEdit.BottomSahddow = true;
-            this.pbEdit.color = System.Drawing.Color.Transparent;
-            this.pbEdit.LeftSahddow = false;
-            this.pbEdit.Location = new System.Drawing.Point(195, 546);
-            this.pbEdit.Name = "pbEdit";
-            this.pbEdit.RightSahddow = true;
-            this.pbEdit.ShadowDepth = 20;
-            this.pbEdit.Size = new System.Drawing.Size(35, 35);
-            this.pbEdit.TabIndex = 45;
-            this.pbEdit.Paint += new System.Windows.Forms.PaintEventHandler(this.pbEdit_Paint);
             // 
             // frmEntry
             // 
@@ -668,7 +649,6 @@
             this.ClientSize = new System.Drawing.Size(1150, 617);
             this.Controls.Add(this.txtMID);
             this.Controls.Add(this.txtTitle);
-            this.Controls.Add(this.pbEdit);
             this.Controls.Add(this.cbCountry);
             this.Controls.Add(this.bunifuSeparator9);
             this.Controls.Add(this.cbQuality);
@@ -704,6 +684,7 @@
             this.Name = "frmEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEntry";
+            this.Load += new System.EventHandler(this.frmEntry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMovie)).EndInit();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
@@ -745,7 +726,6 @@
         private System.Windows.Forms.Label label4;
         private MaterialSkin.Controls.MaterialRaisedButton btnSave;
         private MaterialSkin.Controls.MaterialRaisedButton btnCancel;
-        private Bunifu.Framework.UI.BunifuCards pbEdit;
         private System.Windows.Forms.PictureBox btnExit;
         private Bunifu.Framework.UI.BunifuMaterialTextbox cbQuality;
         private System.Windows.Forms.ComboBox cbCountry;

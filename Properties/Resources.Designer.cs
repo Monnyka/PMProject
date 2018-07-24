@@ -113,6 +113,27 @@ namespace Prime_Movie_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap photo_2018_07_24_15_59_16 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2018-07-24_15-59-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rivers_forests_valley_montenegro_river_green_mountains_fantastic_landscape_desktop_backgrounds {
+            get {
+                object obj = ResourceManager.GetObject("rivers-forests-valley-montenegro-river-green-mountains-fantastic-landscape-deskto" +
+                        "p-backgrounds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thumbs_Up_96px {
             get {
                 object obj = ResourceManager.GetObject("Thumbs Up_96px", resourceCulture);

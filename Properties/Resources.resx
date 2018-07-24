@@ -121,6 +121,9 @@
   <data name="Thumbs Up_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thumbs Up_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="photo_2018-07-24_15-59-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo_2018-07-24_15-59-16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Network_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Network_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,10 +136,13 @@
   <data name="Multiply_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Multiply_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Workflow_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Workflow_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Edit_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Workflow_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Workflow_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rivers-forests-valley-montenegro-river-green-mountains-fantastic-landscape-desktop-backgrounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rivers-forests-valley-montenegro-river-green-mountains-fantastic-landscape-desktop-backgrounds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
