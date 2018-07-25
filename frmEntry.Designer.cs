@@ -442,7 +442,7 @@
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Depth = 0;
-            this.btnSave.Location = new System.Drawing.Point(386, 575);
+            this.btnSave.Location = new System.Drawing.Point(894, 563);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
@@ -456,7 +456,7 @@
             // 
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Depth = 0;
-            this.btnCancel.Location = new System.Drawing.Point(906, 560);
+            this.btnCancel.Location = new System.Drawing.Point(719, 563);
             this.btnCancel.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Primary = true;
@@ -634,7 +634,7 @@
             this.txtMID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtMID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMID.isPassword = false;
-            this.txtMID.Location = new System.Drawing.Point(758, 559);
+            this.txtMID.Location = new System.Drawing.Point(562, 563);
             this.txtMID.Margin = new System.Windows.Forms.Padding(4);
             this.txtMID.Name = "txtMID";
             this.txtMID.Size = new System.Drawing.Size(150, 42);

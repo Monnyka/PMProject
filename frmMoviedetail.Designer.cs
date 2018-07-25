@@ -48,9 +48,9 @@
             // pbPoster
             // 
             this.pbPoster.BackColor = System.Drawing.SystemColors.Control;
-            this.pbPoster.Location = new System.Drawing.Point(61, 103);
+            this.pbPoster.Location = new System.Drawing.Point(40, 94);
             this.pbPoster.Name = "pbPoster";
-            this.pbPoster.Size = new System.Drawing.Size(197, 298);
+            this.pbPoster.Size = new System.Drawing.Size(227, 334);
             this.pbPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPoster.TabIndex = 0;
             this.pbPoster.TabStop = false;
@@ -61,14 +61,14 @@
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Controls.Add(this.label17);
             this.bunifuGradientPanel1.Controls.Add(this.label16);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Orange;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(188, -11);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(55, 94);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(70, 99);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(55, 71);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // label17
@@ -76,7 +76,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(11, 56);
+            this.label17.Location = new System.Drawing.Point(3, 36);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(50, 17);
             this.label17.TabIndex = 23;
@@ -86,10 +86,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Uni Sans Heavy CAPS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(3, 14);
+            this.label16.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(4, 7);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 42);
+            this.label16.Size = new System.Drawing.Size(48, 31);
             this.label16.TabIndex = 0;
             this.label16.Text = "7.0";
             // 
@@ -105,7 +105,7 @@
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(144, 508);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(144, 533);
             this.bunifuGradientPanel2.TabIndex = 3;
             // 
             // label1
@@ -154,7 +154,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(314, 154);
+            this.label4.Location = new System.Drawing.Point(314, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 8;
@@ -164,7 +164,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(314, 195);
+            this.label5.Location = new System.Drawing.Point(313, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 20);
             this.label5.TabIndex = 9;
@@ -175,10 +175,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox1.Location = new System.Drawing.Point(318, 228);
+            this.textBox1.Location = new System.Drawing.Point(317, 249);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(385, 249);
+            this.textBox1.Size = new System.Drawing.Size(495, 205);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
@@ -187,9 +187,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(872, 508);
-            this.Controls.Add(this.pbPoster);
+            this.ClientSize = new System.Drawing.Size(850, 533);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.pbPoster);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

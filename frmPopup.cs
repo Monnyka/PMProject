@@ -19,9 +19,17 @@ namespace Prime_Movie_Project
         }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+
+            //Exit pop up
             if (btnOK.Text == "Exit")
             {
                 Application.Exit();
+            }
+
+            //OK button
+            if (btnOK.Text == "OK")
+            {
+                this.Hide();
             }
         }
 

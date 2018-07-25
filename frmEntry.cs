@@ -25,10 +25,6 @@ namespace Prime_Movie_Project
         private void btnCancel_Click(object sender, EventArgs e)
         {
             if (btnCancel.Text == "Cancel") { this.Close(); }
-            if (btnCancel.Text == "Edit")
-            {
-
-            }
             if (btnCancel.Text == "Search")
             {
                 cnn.Open();
@@ -63,10 +59,18 @@ namespace Prime_Movie_Project
                         btnSave.Enabled = true;
                         cnn.Close();
                     }
+
+                    //change button text save
+                    btnSave.Text = "Delete";
+                    txtMID.Enabled = false;
+                    btnCancel.Text = "Update";
+
                 }
                 else
                 {
-                    MessageBox.Show("No record found!");
+                    string messagenotfound = "Please check again, Record not found.";
+                    frmPopup popNotfound = new frmPopup(messagenotfound);
+                    popNotfound.Show();
                 }
                 cnn.Close();
             }
@@ -129,6 +133,48 @@ namespace Prime_Movie_Project
             if (btnSave.Text == "Update")
             {
 
+            }
+
+            //Delete Record in DataBase
+            if (btnSave.Text == "Delete")
+            {
+                try
+                {
+                    cnn.Open();
+                    String query = "DELETE FROM tbMovie WHERE id='" + txtMID.Text + "' ";
+                    SqlCommand cmd = new SqlCommand(query, cnn);
+                    cmd.ExecuteNonQuery();
+                    string messagedelete = "Record has been deleted successfull";
+                    frmPopup popdelete = new frmPopup(messagedelete);
+                    popdelete.Show();
+                    txtTitle.Text = "";
+                    cbYear.Text = "Year";
+                    cbGenre.Text = "Genre";
+                    cbCountry.Text = "Country";
+                    cbRating.Text = "Rating";
+                    cbQuality.Text = "Quality";
+                    txtSynopsis.Text = "";
+                    cbDirector.Text = "Director";
+                    txtD1080.Text = "";
+                    txtD720.Text = "";
+                    cbLanguage.Text = "Select Language";
+                    txtRuntime.Text = "";
+                    cbCast.Text = "Select Cast";
+                    pbMovie.Image = null;
+
+
+
+             
+                    cnn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(string.Format("An error occurred: {0}", ex.Message));
+                }
+                btnSave.Text = "Save";
+                btnCancel.Text = "Search";
+                txtMID.Text = "";
+                txtMID.Enabled = true;
             }
         }
 
